@@ -1,0 +1,12 @@
+services:
+  kali:
+    build: .
+    container_name: kali_container
+    volumes:
+      - kali_data:/root
+    tty: true
+    stdin_open: true
+
+volumes:
+  kali_data:
+
